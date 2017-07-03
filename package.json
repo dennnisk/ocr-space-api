@@ -1,0 +1,30 @@
+{
+  "name": "ocr-space-api",
+  "version": "1.0.0",
+  "description": "Allow to access ORC.SPACE api to send images and get the result.",
+  "main": "lib/ocrSpaceApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennnisk/ocr-space-api.git"
+  },
+  "keywords": [
+    "ocr",
+    "api",
+    "ocr-space",
+    "space",
+    "ocr-space-api",
+    "ocr-free"
+  ],
+  "author": "Dennnisk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennnisk/ocr-space-api/issues"
+  },
+  "homepage": "https://github.com/dennnisk/ocr-space-api#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
