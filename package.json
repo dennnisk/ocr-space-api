@@ -1,7 +1,7 @@
 {
   "name": "ocr-space-api",
   "version": "1.0.0",
-  "description": "Allow to access ORC.SPACE api to send images and get the result.",
+  "description": "Allow to access ocr.space API to send images and get the OCR Result (get the image text)",
   "main": "lib/ocrSpaceApi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
