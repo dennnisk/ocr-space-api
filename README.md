@@ -44,3 +44,19 @@ ocrSpaceApi.parseImageFromLocalFile(imageFilePath, options)
   });
 
 ```
+
+### Options
+
+##### Language
+  * Portuguese = `por`
+  * English = `eng`
+  * German = `ger`
+  * Italian = `ita`
+  * and mode details go to: https://ocr.space/ocrapi#PostParameters
+
+##### isOverlayRequired
+
+`Default = False`
+Allows you to specify if the image/pdf text overlay is required. Overlay could be used to show the text over the image
+
+
