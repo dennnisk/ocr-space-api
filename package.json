@@ -1,6 +1,6 @@
 {
   "name": "ocr-space-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allow to access ocr.space API to send images and get the OCR Result (get the image text)",
   "main": "lib/ocrSpaceApi.js",
   "scripts": {
