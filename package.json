@@ -1,14 +1,14 @@
 {
-  "name": "ocr-space-api",
+  "name": "ocr-space-api-alt",
   "version": "1.0.1",
-  "description": "Allow to access ocr.space API to send images and get the OCR Result (get the image text)",
+  "description": "Fork of Dennnisk's original ocr-space-api with added support for PDF uploading. Provides an easy way to send images to the ocr.space API and get the OCR Result",
   "main": "lib/ocrSpaceApi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dennnisk/ocr-space-api.git"
+    "url": "git+https://github.com/SippieCup/ocr-space-api-alt.git"
   },
   "keywords": [
     "ocr",
@@ -18,12 +18,13 @@
     "ocr-space-api",
     "ocr-free"
   ],
-  "author": "Dennnisk",
+  "author": "Andrew Sidhu @SippieCup",
+  "contributors": ["Dennnisk"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dennnisk/ocr-space-api/issues"
+    "url": "https://github.com/SippieCup/ocr-space-api-alt/issues"
   },
-  "homepage": "https://github.com/dennnisk/ocr-space-api#readme",
+  "homepage": "https://github.com/sippieCup/ocr-space-api-alt#readme",
   "dependencies": {
     "request": "^2.81.0"
   }
