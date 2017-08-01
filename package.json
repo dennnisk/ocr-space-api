@@ -1,6 +1,6 @@
 {
   "name": "ocr-space-api-alt",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Fork of Dennnisk's original ocr-space-api with added support for PDF uploading. Provides an easy way to send images to the ocr.space API and get the OCR Result",
   "main": "lib/ocrSpaceApi.js",
   "scripts": {
@@ -19,7 +19,9 @@
     "ocr-free"
   ],
   "author": "Andrew Sidhu @SippieCup",
-  "contributors": ["Dennnisk"],
+  "contributors": [
+    "Dennnisk"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SippieCup/ocr-space-api-alt/issues"
