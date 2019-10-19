@@ -1,15 +1,16 @@
 # ocr-space-api
+
 Allow to access ORC.SPACE api to send images and get the result
 
 More Details: https://ocr.space/ocrapi
 
-**IMPORTANT** The OCR is provided by ocr space.  I don't have anything with them, I just want to help sharing this library.
+**IMPORTANT** The OCR is provided by ocr space. I don't have anything with them, I just want to help sharing this library.
 
 ## Instalation
 
 ### First - Register and Get your API key
 
-Get you API key at https://ocr.space/ocrapi ( Direct link : http://eepurl.com/bOLOcf  ). Just, follow their steps.
+Get you API key at https://ocr.space/ocrapi ( Direct link : http://eepurl.com/bOLOcf ). Just, follow their steps.
 
 ### Second - Install npm package
 
@@ -24,7 +25,7 @@ You can see and example at the folder `example`
 ```javascript
 const ocrSpaceApi = require('ocr-space-api');
 
-var options =  { 
+var options =  {
     apikey: '<your_api_key_here>',
     language: 'por', // Português
     imageFormat: 'image/png', // Image Type (Only png ou gif is acceptable at the moment i wrote this)
@@ -43,20 +44,34 @@ ocrSpaceApi.parseImageFromLocalFile(imageFilePath, options)
     console.log('ERROR:', err);
   });
 
+
+// To process RAW data image use the parseImageFromBuffer call
+// for example in puppeteer scripts you could use the following for img
+
+{
+    const buffer = await response.buffer();
+    //console.log('data:image/png;base64,' + buffer.toString('base64'));
+    try {
+        let parsedResult = await ocrSpaceApi.parseImageFromBuffer(buffer, options);
+        let captcha = parsedResult.parsedText.replace(/\s/g, '').trim();
+    } catch (error) {
+        console.log('OCR ERROR:', error);
+    }
+}
+
 ```
 
 ### Options
 
 ##### Language
-  * Portuguese = `por`
-  * English = `eng`
-  * German = `ger`
-  * Italian = `ita`
-  * and mode details go to: https://ocr.space/ocrapi#PostParameters
+
+- Portuguese = `por`
+- English = `eng`
+- German = `ger`
+- Italian = `ita`
+- and mode details go to: https://ocr.space/ocrapi#PostParameters
 
 ##### isOverlayRequired
 
 `Default = False`
 Allows you to specify if the image/pdf text overlay is required. Overlay could be used to show the text over the image
-
-
