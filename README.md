@@ -1,20 +1,20 @@
 # ocr-space-api
-Allow to access ORC.SPACE api to send images and get the result
+Allow to access OCR.SPACE API to send images and get the result
 
 More Details: https://ocr.space/ocrapi
 
-**IMPORTANT** The OCR is provided by ocr space.  I don't have anything with them, I just want to help sharing this library.
+**IMPORTANT** The OCR is provided by ocr.space. I don't have anything with them, I just want to help sharing this library.
 
 ## Instalation
 
 ### First - Register and Get your API key
 
-Get you API key at https://ocr.space/ocrapi ( Direct link : http://eepurl.com/bOLOcf  ). Just, follow their steps.
+Get your API key at https://ocr.space/ocrapi (Direct link : http://eepurl.com/bOLOcf). Then, follow their steps.
 
 ### Second - Install npm package
 
 ```console
-  npm install ocr-space-api --save
+npm install ocr-space-api --save
 ```
 
 ## Usage example
