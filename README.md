@@ -1,3 +1,7 @@
+# ⚠️ Projeto Descontinuado
+
+Este projeto está **deprecated** e não será mais mantido.  
+
 # ocr-space-api
 Allow to access ORC.SPACE api to send images and get the result
 
